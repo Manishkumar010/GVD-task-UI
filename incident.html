@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Incident Detail</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+        color: #333;
+        overflow-x: hidden;
+    }
+    header {
+        width: 100%;
+        background: linear-gradient(90deg, #2c3e50 60%, #2980b9 100%);
+        color: #fff;
+        padding: 18px 38px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        box-shadow: 0 2px 12px rgba(44,62,80,0.13);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+    .container {
+        padding: 32px 28px;
+        max-width: 900px;
+        margin: 32px auto;
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(44,62,80,0.10);
+    }
+    h2 {
+        color: #2980b9;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+    h3 {
+        color: #2c3e50;
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+    .meta {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 18px;
+        flex-wrap: wrap;
+    }
+    .meta-item {
+        background: linear-gradient(90deg, #f0f3f7 80%, #eaf6ff 100%);
+        padding: 10px 18px;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+    }
+    .section {
+        margin-top: 24px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 3px 12px rgba(44,62,80,0.10);
+        margin-bottom: 8px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        background: linear-gradient(90deg, #f8fbff 80%, #eaf6ff 100%);
+        padding: 10px 14px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+    }
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1.5px solid #b2bec3;
+        font-size: 1rem;
+        outline: none;
+        background: #f8fbff;
+        transition: border 0.2s;
+        margin-top: 6px;
+    }
+    textarea:focus {
+        border-color: #2980b9;
+        box-shadow: 0 0 8px rgba(41,128,185,0.18);
+    }
+    .fa {
+        margin-right: 6px;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            font-size: 1.1rem;
+            padding: 12px 10px;
+            gap: 8px;
+        }
+        .container {
+            padding: 16px 6px;
+            max-width: 100%;
+            margin: 12px auto;
+            border-radius: 10px;
+        }
+        h2 {
+            font-size: 1rem;
+            margin-bottom: 7px;
+        }
+        h3 {
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+        .meta {
+            flex-direction: column;
+            gap: 12px;
+        }
+        .meta-item {
+            font-size: 0.95rem;
+            padding: 8px 10px;
+            border-radius: 8px;
+        }
+        .section {
+            margin-top: 16px;
+        }
+        img {
+            border-radius: 8px;
+            margin-bottom: 6px;
+            max-width: 100%;
+            height: auto;
+        }
+        li {
+            font-size: 0.95rem;
+            padding: 8px 10px;
+            border-radius: 7px;
+        }
+        textarea {
+            font-size: 0.95rem;
+            padding: 8px;
+            border-radius: 7px;
+        }
+    }
+</style>
+</head>
+<body>
+<header><i class="fa-solid fa-file-shield"></i> Incident Detail</header>
+<div class="container">
+    <h2><i class="fa-solid fa-circle-info" style="color:#2980b9"></i> Incident Metadata</h2>
+    <div class="meta">
+        <div class="meta-item"><i class="fa-solid fa-person-running" style="color:#e74c3c"></i> <b>Type:</b> Intrusion</div>
+        <div class="meta-item"><i class="fa-solid fa-location-dot" style="color:#2980b9"></i> <b>Location:</b> Zone 3</div>
+        <div class="meta-item"><i class="fa-solid fa-clock" style="color:#f39c12"></i> <b>Time:</b> 14:23, Aug 10, 2025</div>
+    </div>
+
+    <div class="section">
+        <h3><i class="fa-solid fa-image" style="color:#00c3ff"></i> Snapshot from Video</h3>
+        <img src="https://media.istockphoto.com/id/522604359/photo/car-crash-collision-in-urban-street.jpg?s=612x612&w=0&k=20&c=qXuOVYIXkswK93kNrxx_oOmpaomONhv_rErPbsBcHFQ=" alt="Snapshot">
+    </div>
+
+    <div class="section">
+        <h3><i class="fa-solid fa-link" style="color:#27ae60"></i> Linked Sensor Inputs</h3>
+        <ul>
+            <li><i class="fa-solid fa-wave-square" style="color:#e67e22"></i> Motion Sensor: <b>Triggered</b></li>
+            <li><i class="fa-solid fa-door-closed" style="color:#2980b9"></i> Door Sensor: <b>Closed</b></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3><i class="fa-solid fa-pen-to-square" style="color:#2980b9"></i> Resolution Notes</h3>
+        <textarea placeholder="Enter resolution notes..."></textarea>
+    </div>
+</div>
+</body>
+</html>
